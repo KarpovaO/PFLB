@@ -10,21 +10,21 @@ public class Summa {
     }
 
     public static double sum(int a, int b, int c) {
-        double r = a + b + c;
-        return r;
+        return sum(a, b) + c;
+
     }
 
     public static double sum(double x, double y) {
+
         return x + y;
     }
 
     public static double sum(double x, double y, double z) {
-        return x + y + z;
+        return sum(x, y) + z;
     }
 
     public static double sum(int a, double y, double z) {
-        double r = a + y + z;
-        return r;
+        return a + y + z;
     }
 
     //        public double sum(int a, int b) {
@@ -34,12 +34,4 @@ public class Summa {
         return a + b;
     }
 
-    public static void main(String[] args) {
-        System.out.println(sum(1, 2));
-        System.out.println(sum(1, 2, 3));
-        System.out.println(sum(1.5, 2.5));
-        System.out.println(sum(1.5, 2.5, 3.5));
-        System.out.println(sum(Integer.MAX_VALUE, 2.5, 3.5));
-        System.out.println(sum(new Integer(1), new Integer(2)));
-    }
 }

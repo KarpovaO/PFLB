@@ -28,6 +28,37 @@ public class Cat extends Animal {
         this(age, "green");
     }
 
+    public Cat() {
+    }
+
+    public Cat(String eyesColor) {
+        this.eyesColor = eyesColor;
+    }
+
+    public Cat(String eyesColor, String coatColor) {
+        this.eyesColor = eyesColor;
+        this.coatColor = coatColor;
+
+    }
+
+    public Cat(String eyesColor, String coatColor, int age) {
+        this.eyesColor = eyesColor;
+        this.coatColor = coatColor;
+        this.age = age;
+    }
+
+    public Cat(int age, int weight) {
+        this.age = age;
+        this.weight = weight;
+    }
+
+    public Cat(int age, int weight, String eyesColor) {
+        this.age = age;
+        this.weight = weight;
+        this.eyesColor = eyesColor;
+    }
+
+
     @Override
     public String toString() {
         return " Возраст:" + age +
@@ -35,26 +66,5 @@ public class Cat extends Animal {
                 " Вес:" + weight +
                 " Цвет шерсти:" + coatColor;
 
-    }
-
-    public static void main(String[] args) {
-        Cat[] cats = new Cat[]{
-                new Cat(12, "зеленые", 5, "Белый"),
-                new Cat(3, "Синие", 12),
-                new Cat(5, "Карие"),
-                new Cat(10)};
-
-
-        for (Cat cat : cats)
-            System.out.println(cat);
-
-        Animal.testStaticMethod();
-        Cat.testStaticMethod();
-        Cat cat = new Cat(1);
-        cat.testStaticMethod();
-
-        System.out.println(Animal.PLANET);
-        Animal.PLANET = "Луна";
-        System.out.println(cat.PLANET);
     }
 }
