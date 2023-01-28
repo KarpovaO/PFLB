@@ -6,6 +6,7 @@ public class MaxNumber {
 
 //      int MaxNumber = c > (a > b ? a : b) ? c : (a > b ? a : b);
         int MaxNumber = Math.max(a, (Math.max(b, c)));
-
     }
+
 }
+
