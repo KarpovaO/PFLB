@@ -4,8 +4,8 @@ public class MaxNumber {
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
 
-//      int MaxNumber = c > (a > b ? a : b) ? c : (a > b ? a : b);
         int MaxNumber = Math.max(a, (Math.max(b, c)));
+        System.out.println(MaxNumber);
     }
 
 }
