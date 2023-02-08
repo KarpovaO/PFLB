@@ -1,7 +1,7 @@
 package org.example;
 
 public class Timer {
-    private  int seconds;
+    private int seconds;
 
     public Timer(int seconds) {
         this.seconds = seconds;
@@ -17,11 +17,12 @@ public class Timer {
     public void printTime() {
         int minutes = this.seconds / 60;
         int remainingSeconds = this.seconds % 60;
-        System.out.println(minutes + ":" + remainingSeconds);
+        System.out.printf("%02d:%02d", minutes, remainingSeconds);
+        System.out.println();
     }
 
     public void start() {
-        for (; seconds >= 0; this.seconds --) {
+        for (; seconds >= 0; this.seconds--) {
             printTime();
             waitSecond();
         }
