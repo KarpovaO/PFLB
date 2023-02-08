@@ -1,7 +1,7 @@
 package org.example;
 
 public class Timer {
-    private final int seconds;
+    private  int seconds;
 
     public Timer(int seconds) {
         this.seconds = seconds;
@@ -18,11 +18,11 @@ public class Timer {
         int minutes = this.seconds / 60;
         int remainingSeconds = this.seconds % 60;
         System.out.println(minutes + ":" + remainingSeconds);
-    } // я не понимаю зачем этот метод нужен
+    }
 
     public void start() {
-        for (int i = this.seconds; i >= 0; i--) {
-            System.out.println(i / 60 + ":" + (i % 60));
+        for (; seconds >= 0; this.seconds --) {
+            printTime();
             waitSecond();
         }
         System.out.println("Время вышло!");
