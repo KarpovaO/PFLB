@@ -3,8 +3,8 @@ package org.example;
 import java.util.Random;
 
 public class Task4 {
-    private int n;
-    private Random random = new Random();
+    private final int n;
+    private final Random random = new Random();
 
     public Task4(int n) {
         this.n = n;
@@ -23,6 +23,7 @@ public class Task4 {
     }
 
     public int nextInt(int x) {
+
         return random.nextInt(x);
     }
 
