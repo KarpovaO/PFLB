@@ -18,8 +18,8 @@ public class Task3 {
                     }
                 }
                 //печатаем строку из массива
-                for (int j = 0; j < array.length; j++) {
-                    System.out.print(array[j]);
+                for (int k : array) {
+                    System.out.print(k);
                     System.out.print(" ");
                 }
                 //переходим к следующей строке
