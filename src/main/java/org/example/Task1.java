@@ -8,10 +8,10 @@ public class Task1 {
             int e = m;
             m = n;
             n = e;
-            for (int x = m; x <= n; x++) {
-                if (x % 3 == 0 && x % 5 != 0)
-                    System.out.println(x);
-            }
+        }
+        for (int x = m; x <= n; x++) {
+            if (x % 3 == 0 && x % 5 != 0)
+                System.out.println(x);
         }
     }
 }
