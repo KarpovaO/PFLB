@@ -19,7 +19,8 @@ public class Task3 {
                 }
                 //печатаем строку из массива
                 for (int k : array) {
-                    System.out.print(k);
+                    if (k <= n)
+                        System.out.print(k);
                     System.out.print(" ");
                 }
                 //переходим к следующей строке
