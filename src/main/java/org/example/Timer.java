@@ -22,13 +22,15 @@ public class Timer {
     }
 
     public void start() {
-        for (; seconds >= 0; this.seconds--) {
+        while (seconds > 0) {
+            this.seconds--;
             printTime();
             waitSecond();
         }
         System.out.println("Время вышло!");
     }
 }
+
 
 
 
