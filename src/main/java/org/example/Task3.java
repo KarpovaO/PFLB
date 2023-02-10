@@ -21,6 +21,7 @@ public class Task3 {
                 for (int k : array) {
                     if (k <= n)
                         System.out.print(k);
+                    else System.out.print(" ".repeat(new Integer(k).toString().length()));
                     System.out.print(" ");
                 }
                 //переходим к следующей строке
